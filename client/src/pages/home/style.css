@@ -1,0 +1,12 @@
+.layout {
+    padding: 0px 0px 0px 20px;
+}
+
+.error-message {
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
