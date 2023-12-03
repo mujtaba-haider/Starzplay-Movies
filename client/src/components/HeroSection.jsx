@@ -30,9 +30,10 @@ const HeroSection = ({ movies }) => {
             responsive={responsive}
             autoPlay={true}
             swipeable={true}
-            draggable={false}
+            draggable={true}
             showDots={false}
             infinite={true}
+            slidesToSlide={1}
         >
             {movies.map((data, index) =>
                 <div key={index}>

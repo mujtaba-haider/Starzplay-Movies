@@ -33,7 +33,7 @@ const SubSection = ({ index, title, movies }) => {
         arrows={false}
         responsive={responsive}
         autoPlay={true}
-        swipeable={true}
+        swipeable={false}
         draggable={false}
         showDots={false}
         infinite={true}

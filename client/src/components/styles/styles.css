@@ -1,6 +1,7 @@
 .hero_img {
     position: relative;
     width: 100%; 
+    pointer-events: none;
   }
   
   .hero_img::before {
