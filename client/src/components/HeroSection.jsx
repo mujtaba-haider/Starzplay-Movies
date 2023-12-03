@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/styles.css';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 

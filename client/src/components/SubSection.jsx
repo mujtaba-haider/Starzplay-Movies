@@ -42,7 +42,7 @@ const SubSection = ({ index, title, movies }) => {
         {
           movies && movies.map((data, i) =>
             <div className="carousel_img" key={i}>
-              <img style={{ width: "130px", height: "180px" }} src={data?.thumbnails[`thumb-677x474`]?.url} alt={data?.title} />
+              <img style={{ width: "125px", height: "180px" }} src={data?.thumbnails[`thumb-677x474`]?.url} alt={data?.title} />
             </div>
           )
         }

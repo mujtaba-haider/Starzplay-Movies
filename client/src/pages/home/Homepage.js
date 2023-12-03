@@ -14,6 +14,7 @@ export const Homepage = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
+        setError(null);
         getData();
     }, [])
 
@@ -33,7 +34,7 @@ export const Homepage = () => {
 
     return (
         <>
-            {loading && <ClipLoader />}
+            {loading && <div className="loader"><ClipLoader /></div>}
             {error && <div className="error-message">{error}</div>}
 
             {!loading && !error && (
@@ -54,7 +55,7 @@ export const Homepage = () => {
                                 if (data.moduleType !== "HERO") {
                                     return (
                                         <Suspense key={data?.moduleId} fallback={<ClipLoader />}>
-                                            <SubSection index={index} title={data.title} movies={data?.layoutTitles?.titles} />
+                                            <SubSection index={index} title={data?.title} movies={data?.layoutTitles?.titles} />
                                         </Suspense>
                                     )
                                 }
